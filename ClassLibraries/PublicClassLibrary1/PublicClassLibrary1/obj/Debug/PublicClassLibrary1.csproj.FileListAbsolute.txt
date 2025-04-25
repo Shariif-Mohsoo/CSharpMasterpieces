@@ -1,0 +1,6 @@
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\bin\Debug\PublicClassLibrary1.dll
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\bin\Debug\PublicClassLibrary1.pdb
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\obj\Debug\PublicClassLibrary1.csproj.AssemblyReference.cache
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\obj\Debug\PublicClassLibrary1.csproj.CoreCompileInputs.cache
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\obj\Debug\PublicClassLibrary1.dll
+E:\C#\PublicClassLibrary1\PublicClassLibrary1\obj\Debug\PublicClassLibrary1.pdb
