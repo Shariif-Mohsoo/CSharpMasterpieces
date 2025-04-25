@@ -1,0 +1,9 @@
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\obj\Debug\1_ConsoleApp1.csproj.AssemblyReference.cache
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\obj\Debug\1_ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\bin\Debug\1_ConsoleApp1.exe.config
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\bin\Debug\1_ConsoleApp1.exe
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\bin\Debug\1_ConsoleApp1.pdb
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\bin\Debug\PublicClassLibrary1.dll
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\obj\Debug\1_Consol.A8BB80EE.Up2Date
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\obj\Debug\1_ConsoleApp1.exe
+E:\C#\1_ConsoleApp1\1_ConsoleApp1\obj\Debug\1_ConsoleApp1.pdb
