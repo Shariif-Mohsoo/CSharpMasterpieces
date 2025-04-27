@@ -1,0 +1,12 @@
+E:\C#\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll
+E:\C#\ClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.pdb
+E:\C#\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+E:\C#\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+E:\C#\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
+E:\C#\ClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
+E:\C#\PrivateClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.dll
+E:\C#\PrivateClassLibrary\ClassLibrary\bin\Debug\ClassLibrary.pdb
+E:\C#\PrivateClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+E:\C#\PrivateClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+E:\C#\PrivateClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.dll
+E:\C#\PrivateClassLibrary\ClassLibrary\obj\Debug\ClassLibrary.pdb
