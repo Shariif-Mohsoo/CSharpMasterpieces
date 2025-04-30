@@ -1,0 +1,7 @@
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe.config
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.pdb
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.AssemblyReference.cache
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.CoreCompileInputs.cache
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.exe
+E:\C#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.pdb
