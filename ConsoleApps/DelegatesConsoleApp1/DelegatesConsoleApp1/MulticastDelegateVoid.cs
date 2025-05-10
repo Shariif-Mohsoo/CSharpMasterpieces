@@ -26,27 +26,27 @@ namespace DelegatesConsoleApp1
             Console.WriteLine("Goodbye");
         }
 
-        class Program
-        {
-            public static void Main()
-            {
-                // Step 3: Create delegate and add methods
-                //okay //ShowMessage msg = new ShowMessage(Hello);
-                ShowMessage msg = Hello;
-                //logical error ; output starts from here..
-                //msg = new ShowMessage(Welcome);
-                msg += Welcome;
-                msg += Bye;
+        //class Program
+        //{
+        //    public static void Main()
+        //    {
+        //        // Step 3: Create delegate and add methods
+        //        //okay //ShowMessage msg = new ShowMessage(Hello);
+        //        ShowMessage msg = Hello;
+        //        //logical error ; output starts from here..
+        //        //msg = new ShowMessage(Welcome);
+        //        msg += Welcome;
+        //        msg += Bye;
 
-                // Step 4: Call the delegate
-                msg();  // All 3 methods will run
-                        //output
-                        //            Hello
-                        //            Welcome
-                        //            Goodbye
+        //        // Step 4: Call the delegate
+        //        msg();  // All 3 methods will run
+        //                //output
+        //                //            Hello
+        //                //            Welcome
+        //                //            Goodbye
 
-            }
-        }
+        //    }
+        //}
     }
 
 }
