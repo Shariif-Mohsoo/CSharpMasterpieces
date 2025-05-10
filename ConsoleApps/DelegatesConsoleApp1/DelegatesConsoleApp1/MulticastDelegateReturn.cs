@@ -21,9 +21,10 @@ namespace DelegatesConsoleApp1
 
         //public static void Main()
         //{
+        //    //wrong will show/cause an error.
+        //    //GetNumber num = new GetNumber(first, second);
         //    GetNumber num = First;
         //    num += Second;
-
         //    int result = num();  // Only returns from Second
         //    Console.WriteLine(result);  // Output: 2
         //}
