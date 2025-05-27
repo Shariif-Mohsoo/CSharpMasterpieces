@@ -24,17 +24,17 @@ namespace DelegatesConsoleApp1
             return 3;
         }
 
-        public static void Main()
-        {
-            //wrong will show/cause an error.
-            //GetNumber num = new GetNumber(first, second);
-            //GetNumber num = First + Second + third;
-            GetNumber num = new GetNumber(First);
-            num += Second;
-            num += third;
-            int result = num();  // Only returns from Second
-            Console.WriteLine(result);  // Output: 3
-        }
+        //public static void Main()
+        //{
+        //    //wrong will show/cause an error.
+        //    //GetNumber num = new GetNumber(first, second);
+        //    //GetNumber num = First + Second + third;
+        //    GetNumber num = new GetNumber(First);
+        //    num += Second;
+        //    num += third;
+        //    int result = num();  // Only returns from Second
+        //    Console.WriteLine(result);  // Output: 3
+        //}
 
     }
 }
