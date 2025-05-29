@@ -44,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="delegate.cs" />
-    <Compile Include="multicaseDelegate.cs" />
+    <Compile Include="genericDelegate.cs" />
+    <Compile Include="multicastDelegate.cs" />
     <Compile Include="MulticastDelegateReturn.cs" />
     <Compile Include="MulticastDelegateVoid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
