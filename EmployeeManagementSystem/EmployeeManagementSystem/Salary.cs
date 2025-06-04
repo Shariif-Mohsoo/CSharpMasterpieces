@@ -164,5 +164,10 @@ namespace EmployeeManagementSystem
         {
             this.clearFields();
         }
+
+        private void Salary_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

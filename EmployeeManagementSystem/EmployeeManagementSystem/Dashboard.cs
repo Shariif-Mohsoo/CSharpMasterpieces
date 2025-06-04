@@ -21,9 +21,11 @@ namespace EmployeeManagementSystem
         public Dashboard()
         {
             InitializeComponent();
-
+            //to display Total Employees 
             this.displayTE();
+            // to display Active Employees
             this.displayAE();
+            // to display In_Active Employees.
             this.displayIE();
         }
 
