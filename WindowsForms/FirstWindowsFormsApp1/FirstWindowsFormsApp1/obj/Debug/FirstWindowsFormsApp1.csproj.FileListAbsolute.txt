@@ -1,0 +1,10 @@
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\bin\Debug\FirstWindowsFormsApp1.exe.config
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\bin\Debug\FirstWindowsFormsApp1.exe
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\bin\Debug\FirstWindowsFormsApp1.pdb
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.csproj.AssemblyReference.cache
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.Form1.resources
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.Properties.Resources.resources
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.csproj.GenerateResource.cache
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.exe
+E:\C#\FirstWindowsFormsApp1\FirstWindowsFormsApp1\obj\Debug\FirstWindowsFormsApp1.pdb
