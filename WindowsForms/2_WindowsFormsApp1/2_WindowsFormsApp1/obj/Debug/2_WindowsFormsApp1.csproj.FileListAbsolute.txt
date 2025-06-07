@@ -1,0 +1,12 @@
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\bin\Debug\2_WindowsFormsApp1.exe.config
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\bin\Debug\2_WindowsFormsApp1.exe
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\bin\Debug\2_WindowsFormsApp1.pdb
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\bin\Debug\PublicClassLibrary1.dll
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\_2_WindowsFormsApp1.Form1.resources
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\_2_WindowsFormsApp1.Properties.Resources.resources
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_WindowsFormsApp1.csproj.GenerateResource.cache
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_Window.5FFE00F2.Up2Date
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_WindowsFormsApp1.exe
+E:\C#\2_WindowsFormsApp1\2_WindowsFormsApp1\obj\Debug\2_WindowsFormsApp1.pdb
