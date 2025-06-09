@@ -1,0 +1,10 @@
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\bin\Debug\SecondWindowsFormsApp1.exe.config
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\bin\Debug\SecondWindowsFormsApp1.exe
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\bin\Debug\SecondWindowsFormsApp1.pdb
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.csproj.AssemblyReference.cache
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.Form1.resources
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.Properties.Resources.resources
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.csproj.GenerateResource.cache
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.exe
+E:\C#\SecondWindowsFormsApp1\SecondWindowsFormsApp1\obj\Debug\SecondWindowsFormsApp1.pdb
