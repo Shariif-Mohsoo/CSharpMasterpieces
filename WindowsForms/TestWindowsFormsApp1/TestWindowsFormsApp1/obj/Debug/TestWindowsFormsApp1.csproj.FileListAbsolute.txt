@@ -1,0 +1,10 @@
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\bin\Debug\TestWindowsFormsApp1.exe.config
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\bin\Debug\TestWindowsFormsApp1.exe
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\bin\Debug\TestWindowsFormsApp1.pdb
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.csproj.AssemblyReference.cache
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.Form1.resources
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.Properties.Resources.resources
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.csproj.GenerateResource.cache
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.exe
+E:\C#\ConsoleApps\TestWindowsFormsApp1\TestWindowsFormsApp1\obj\Debug\TestWindowsFormsApp1.pdb
