@@ -79,7 +79,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(133, 258);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(346, 29);
+            this.label6.Size = new System.Drawing.Size(229, 19);
             this.label6.TabIndex = 12;
             this.label6.Text = "Employee Management System";
             // 
@@ -107,7 +107,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(241, 502);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 22);
+            this.label5.Size = new System.Drawing.Size(116, 14);
             this.label5.TabIndex = 10;
             this.label5.Text = "Login Your Account";
             // 
@@ -136,7 +136,7 @@
             this.signup_showPass.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signup_showPass.Location = new System.Drawing.Point(740, 346);
             this.signup_showPass.Name = "signup_showPass";
-            this.signup_showPass.Size = new System.Drawing.Size(174, 28);
+            this.signup_showPass.Size = new System.Drawing.Size(123, 21);
             this.signup_showPass.TabIndex = 19;
             this.signup_showPass.Text = "Show Password";
             this.signup_showPass.UseVisualStyleBackColor = false;
@@ -175,7 +175,7 @@
             this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(428, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 24);
+            this.label4.Size = new System.Drawing.Size(71, 17);
             this.label4.TabIndex = 16;
             this.label4.Text = "Password:";
             // 
@@ -194,7 +194,7 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(428, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 24);
+            this.label3.Size = new System.Drawing.Size(74, 17);
             this.label3.TabIndex = 14;
             this.label3.Text = "Username:";
             // 
@@ -204,7 +204,7 @@
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(426, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 32);
+            this.label2.Size = new System.Drawing.Size(169, 22);
             this.label2.TabIndex = 13;
             this.label2.Text = "Register Account";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -215,7 +215,7 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1211, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 19);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 12;
             // 
             // exit
@@ -225,7 +225,7 @@
             this.exit.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.Location = new System.Drawing.Point(1207, 48);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(0, 24);
+            this.exit.Size = new System.Drawing.Size(0, 17);
             this.exit.TabIndex = 22;
             // 
             // label7
@@ -235,7 +235,7 @@
             this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(940, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 24);
+            this.label7.Size = new System.Drawing.Size(16, 17);
             this.label7.TabIndex = 23;
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -263,6 +263,7 @@
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -22,11 +22,20 @@ namespace EmployeeManagementSystem
         public string Image { set; get; }            // File path of the employee's image 6
         public int Salary { set; get; }              // Salary amount 7
         public string Status { set; get; }           // Employment status (e.g., Active, Inactive) 8
+        public string filterBy { set; get; }
 
         // SQL Server connection string to connect with the 'employees' database
         SqlConnection connect = new SqlConnection(
             "Data Source=DESKTOP-9CRTH2N\\SQLEXPRESS;Initial Catalog=employees;Integrated Security=True;"
         );
+        public EmployeeData()
+        {
+            //default constructor.
+        }
+        public EmployeeData(string item)
+        {
+            this.filterBy = item;
+        }
 
         // Method to fetch a list of employees from the database
         public List<EmployeeData> employeeListData()
@@ -42,11 +51,28 @@ namespace EmployeeManagementSystem
                     connect.Open(); // Open database connection
 
                     // SQL query to select all employees where delete_date is null (not deleted)
-                    string selectData = "select * from employees where delete_date is null";
+                    //string selectData = "select * from employees where delete_date is null";
+                    string selectData = @"
+                                    SELECT * 
+                                    FROM employees 
+                                    WHERE delete_date IS NULL
+                                      AND (
+                                        @filterBy IS NULL
+                                        OR gender = @filterBy
+                                        OR position = @filterBy
+                                        OR status = @filterBy
+                                      );";
+
+
+
 
                     // Execute the query using SqlCommand
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
                     {
+                        // Always add @filterBy parameter: pass NULL to show all employees, or actual value to filter by gender, position, or status
+                        cmd.Parameters.AddWithValue("@filterBy", string.IsNullOrEmpty(filterBy) ? DBNull.Value : (object)filterBy);
+
+
                         SqlDataReader reader = cmd.ExecuteReader(); // Read the result
 
                         // Loop through each row in the result
@@ -63,7 +89,7 @@ namespace EmployeeManagementSystem
                             ed.Salary = (int)reader["salary"];
                             ed.Image = reader["image"].ToString();
                             ed.Status = reader["status"].ToString();
-
+                            ed.filterBy = filterBy;
                             // Add the employee to the list
                             listdata.Add(ed);
                         }

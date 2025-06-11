@@ -409,5 +409,14 @@ namespace EmployeeManagementSystem
         {
 
         }
+
+        private void filter_emps_Click(object sender, EventArgs e)
+        {
+            string filterItem = filter_emp.Text.Trim();
+            EmployeeData ed = new EmployeeData(filterItem);
+            List<EmployeeData> listData = ed.employeeListData();
+            dataGridView1.DataSource = listData;
+            filter_emp.Text = "";
+        }
     }
 }
