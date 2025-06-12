@@ -91,9 +91,27 @@ namespace EmployeeManagementSystem
 
                             using (SqlCommand cmd = new SqlCommand(updateData, connect))
                             {
-                                int bonus = Convert.ToInt32(salary_bonus.Text.Trim());
+
+
+                                string query = "SELECT bonus FROM Bonus WHERE employee_id = @employeeID;";
+                                string oldBonus="0";
+                                using (SqlCommand cmdd = new SqlCommand(query, connect))
+                                {
+                                    cmdd.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+
+                                   
+                                    object result = cmdd.ExecuteScalar();
+                                    
+
+                                    // Display 0 if no bonus, else show actual bonus
+                                    oldBonus = (result != null && result != DBNull.Value) ? result.ToString() : "0";
+                                }
+                                //MessageBox.Show(oldBonus);
+                                decimal oldBon = Convert.ToDecimal(oldBonus);
+                                int oldBonusInt = (int)oldBon;
+                                int bonus = Convert.ToInt32(salary_bonus.Text.Trim()) + Convert.ToInt32(oldBonusInt);
                                 int basicSalary = Convert.ToInt32(salary_salary.Text.Trim());
-                                int totalSalary = basicSalary + bonus;
+                                int totalSalary = basicSalary + Convert.ToInt32(salary_bonus.Text.Trim());
                                 cmd.Parameters.AddWithValue("@salary", totalSalary);
                                 cmd.Parameters.AddWithValue("@updateDate", today);
                                 cmd.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
