@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace EmployeeManagementSystem
 {
-    public partial class Salary: UserControl
+    public partial class Salary : UserControl
     {
 
         // SQL Server connection string to connect with the 'employees' database
@@ -62,7 +62,7 @@ namespace EmployeeManagementSystem
         }
         private void salary_updateBtn_Click(object sender, EventArgs e)
         {
-            if(salary_employeeID.Text == ""
+            if (salary_employeeID.Text == ""
                || salary_name.Text == ""
                || salary_position.Text == ""
                || salary_salary.Text == ""
@@ -73,25 +73,45 @@ namespace EmployeeManagementSystem
             }
             else
             {
-                DialogResult check = MessageBox.Show("Are you sure you want to UPDATE ID: " + 
-                    salary_employeeID.Text.Trim() + "?","Confirmation Message" ,MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                DialogResult check = MessageBox.Show("Are you sure you want to UPDATE ID: " +
+                    salary_employeeID.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question
                     );
                 if (check == DialogResult.Yes)
                 {
-                    if(connect.State == ConnectionState.Closed)
+                    if (connect.State == ConnectionState.Closed)
                     {
 
-                        try {
+                        try
+                        {
                             connect.Open();
                             DateTime today = DateTime.Today;
                             string updateData = "update employees set salary = @salary, update_date = @updateDate" +
                                 " where employee_id = @employeeID; " +
                                 "update Bonus set bonus=@bonus where employee_id=@employeeID";
 
-                            using (SqlCommand cmd = new SqlCommand(updateData,connect)) {
-                                int bonus = Convert.ToInt32(salary_bonus.Text.Trim());
+                            using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                            {
+
+
+                                string query = "SELECT bonus FROM Bonus WHERE employee_id = @employeeID;";
+                                string oldBonus="0";
+                                using (SqlCommand cmdd = new SqlCommand(query, connect))
+                                {
+                                    cmdd.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+
+                                   
+                                    object result = cmdd.ExecuteScalar();
+                                    
+
+                                    // Display 0 if no bonus, else show actual bonus
+                                    oldBonus = (result != null && result != DBNull.Value) ? result.ToString() : "0";
+                                }
+                                //MessageBox.Show(oldBonus);
+                                decimal oldBon = Convert.ToDecimal(oldBonus);
+                                int oldBonusInt = (int)oldBon;
+                                int bonus = Convert.ToInt32(salary_bonus.Text.Trim()) + Convert.ToInt32(oldBonusInt);
                                 int basicSalary = Convert.ToInt32(salary_salary.Text.Trim());
-                                int totalSalary = basicSalary + bonus;
+                                int totalSalary = basicSalary + Convert.ToInt32(salary_bonus.Text.Trim());
                                 cmd.Parameters.AddWithValue("@salary", totalSalary);
                                 cmd.Parameters.AddWithValue("@updateDate", today);
                                 cmd.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
@@ -106,7 +126,7 @@ namespace EmployeeManagementSystem
                                 this.clearFields();
                             }
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
                             MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
@@ -119,7 +139,7 @@ namespace EmployeeManagementSystem
                 else
                 {
                     MessageBox.Show("Cancelled", "Information Message",
-                        MessageBoxButtons.OK,MessageBoxIcon.Warning
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning
                         );
                 }
             }
@@ -143,22 +163,39 @@ namespace EmployeeManagementSystem
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //row shouldn't be out of the boundry
-            if(e.RowIndex != -1)
+            if (e.RowIndex != -1)
             {
-                //select the clicked row
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                //storing the desire data to the input fields of salary form.
+
                 if (row != null)
                 {
-                    salary_employeeID.Text = row.Cells[0].Value.ToString();
-                    salary_name.Text = row.Cells[1].Value.ToString();
-                    salary_position.Text = row.Cells[4].Value.ToString();
-                    salary_salary.Text = row.Cells[5].Value.ToString();
+                    salary_employeeID.Text = row.Cells[0].Value?.ToString();
+                    salary_name.Text = row.Cells[1].Value?.ToString();
+                    salary_position.Text = row.Cells[4].Value?.ToString();
+                    salary_salary.Text = row.Cells[5].Value?.ToString();
                 }
 
+                // Select bonus
+                string query = "SELECT bonus FROM Bonus WHERE employee_id = @employeeID;";
+                using (SqlCommand cmd = new SqlCommand(query, connect))
+                {
+                    cmd.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+
+                    connect.Open();
+                    object result = cmd.ExecuteScalar();
+                    connect.Close();
+
+                    // Display 0 if no bonus, else show actual bonus
+                    salary_bonus.Text = (result != null && result != DBNull.Value) ? result.ToString() : "0";
+                }
             }
+
+        
+
+            //end selecting bonus
+
         }
+        
 
         private void salary_clearBtn_Click(object sender, EventArgs e)
         {
@@ -168,6 +205,110 @@ namespace EmployeeManagementSystem
         private void Salary_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bonus_deleteBtn_Click(object sender, EventArgs e)
+        {
+            //for delete purpose
+            if (salary_employeeID.Text == ""
+              || salary_name.Text == ""
+              || salary_position.Text == ""
+              || salary_salary.Text == ""
+               )
+            {
+                MessageBox.Show("Please make sure to fill all blank fields",
+                    "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult check = MessageBox.Show("Are you sure you want to Remove Bonus for ID: " +
+                    salary_employeeID.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+                    );
+                if (check == DialogResult.Yes)
+                {
+                    if (connect.State == ConnectionState.Closed)
+                    {
+
+                        try
+                        {
+
+                            connect.Open();
+                            DateTime today = DateTime.Today;
+
+                            // Step 1: Set bonus = 0
+                            string updateBonusQuery = @"
+                                                        UPDATE Bonus 
+                                                        SET bonus = 0 
+                                                        WHERE employee_id = @employeeID;";
+
+                            using (SqlCommand cmdBonus = new SqlCommand(updateBonusQuery, connect))
+                            {
+                                cmdBonus.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+                                cmdBonus.ExecuteNonQuery();
+                            }
+
+                            // Step 2: Get total_salary safely, handle NULLs
+                            string selectQuery = @"
+                                                SELECT ISNULL(CAST(total_salary AS INT), 0) 
+                                                FROM Bonus 
+                                                WHERE employee_id = @employeeID;";
+
+                            int totalSalary = 0;
+
+                            using (SqlCommand cmdSelect = new SqlCommand(selectQuery, connect))
+                            {
+                                cmdSelect.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+
+                                using (SqlDataReader reader = cmdSelect.ExecuteReader())
+                                {
+                                    if (reader.Read())
+                                    {
+                                        totalSalary = reader.GetInt32(0);  // Will now be 0 only if both bonus & basic_salary are NULL
+                                    }
+                                }
+                            }
+
+                            // Step 3: Update employee's salary
+                            string updateEmpQuery = @"
+                                                    UPDATE Employees 
+                                                    SET salary = @salary, update_date = @updateDate 
+                                                    WHERE employee_id = @employeeID;";
+
+                            using (SqlCommand cmdEmp = new SqlCommand(updateEmpQuery, connect))
+                            {
+                                cmdEmp.Parameters.AddWithValue("@salary", totalSalary);
+                                cmdEmp.Parameters.AddWithValue("@updateDate", today);
+                                cmdEmp.Parameters.AddWithValue("@employeeID", salary_employeeID.Text.Trim());
+                                cmdEmp.ExecuteNonQuery();
+                            }
+
+                            this.displayEmployees();
+                            MessageBox.Show("Bonus deleted and salary updated successfully!", "Information Message",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.clearFields();
+
+
+
+
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            connect.Close();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cancelled", "Information Message",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning
+                        );
+                }
+            }
         }
     }
 }

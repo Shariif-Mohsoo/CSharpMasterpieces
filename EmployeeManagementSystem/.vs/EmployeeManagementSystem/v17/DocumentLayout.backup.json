@@ -1,119 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\C#\\EmployeeManagementSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|e:\\c#\\employeemanagementsystem\\employeemanagementsystem\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|e:\\c#\\employeemanagementsystem\\employeemanagementsystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|E:\\C#\\EmployeeManagementSystem\\employeemanagementsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|e:\\c#\\employeemanagementsystem\\employeemanagementsystem\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|e:\\c#\\employeemanagementsystem\\employeemanagementsystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|e:\\c#\\employeemanagementsystem\\employeemanagementsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00D857F5-FB16-45EF-8906-842131BDED3A}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Salary.cs",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Salary.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Salary.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Salary.cs*",
-              "RelativeToolTip": "EmployeeManagementSystem\\Salary.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:48:00.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Salary.cs [Design]",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Salary.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Salary.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Salary.cs [Design]*",
-              "RelativeToolTip": "EmployeeManagementSystem\\Salary.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:47:56.579Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\RegisterForm.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\RegisterForm.cs*",
-              "RelativeToolTip": "EmployeeManagementSystem\\RegisterForm.cs*",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAmwHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:47:26.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\RegisterForm.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\RegisterForm.cs [Design]*",
-              "RelativeToolTip": "EmployeeManagementSystem\\RegisterForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:47:21.774Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Dashboard.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Dashboard.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Dashboard.cs",
-              "RelativeToolTip": "EmployeeManagementSystem\\Dashboard.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAwwFcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:39:57.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Dashboard.cs",
-              "RelativeDocumentMoniker": "EmployeeManagementSystem\\Dashboard.cs",
-              "ToolTip": "E:\\C#\\EmployeeManagementSystem\\EmployeeManagementSystem\\Dashboard.cs [Design]",
-              "RelativeToolTip": "EmployeeManagementSystem\\Dashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T06:58:25.225Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
