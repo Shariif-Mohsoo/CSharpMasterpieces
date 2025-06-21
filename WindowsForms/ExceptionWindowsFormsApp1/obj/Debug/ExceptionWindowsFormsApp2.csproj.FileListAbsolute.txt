@@ -1,0 +1,10 @@
+E:\C#\ExceptionWindowsFormsApp2\bin\Debug\ExceptionWindowsFormsApp2.exe.config
+E:\C#\ExceptionWindowsFormsApp2\bin\Debug\ExceptionWindowsFormsApp2.exe
+E:\C#\ExceptionWindowsFormsApp2\bin\Debug\ExceptionWindowsFormsApp2.pdb
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.csproj.AssemblyReference.cache
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.Properties.Resources.resources
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.csproj.GenerateResource.cache
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.csproj.CoreCompileInputs.cache
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.exe
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.pdb
+E:\C#\ExceptionWindowsFormsApp2\obj\Debug\ExceptionWindowsFormsApp2.passwordException.resources
